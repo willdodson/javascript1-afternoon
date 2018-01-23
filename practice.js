@@ -16,8 +16,14 @@ var name = 'Tyler';
   Create a function called isTyler that accepts name as it's only parameter.
   If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 */
-
 //Code Here
+function isTyler(namey){
+  if(namey===name){
+    return true
+  } else {
+    return false
+  }
+}
 
 
 
@@ -28,7 +34,10 @@ var name = 'Tyler';
 */
 
 //Code Here
+function getName(){
+  return prompt(name)
 
+  }
 
 
 ////////// PROBLEM 3 //////////
@@ -52,7 +61,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// parameters are type of inputs into functions, args are the explicit values 
 
 ////////// PROBLEM 5 //////////
 
@@ -61,7 +70,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+false, null, 0, "", undefined, 
 
 
 ////////// PROBLEM 6 //////////
@@ -71,6 +80,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+function myName(){
+  return "will"
+}
   
 
 
@@ -80,14 +92,14 @@ var name = 'Tyler';
 
 //Code Here
 
-
+var myNewName = myName
 
 /*
   Now alert the result of invoking newMyName
 */
 
 // Code Here
-
+alert(myNewName)
 
 
 ////////// PROBLEM 7 //////////
@@ -98,18 +110,22 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function outerFn(){
+  return function(){
+    return "Will"
+  }
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
 */
 
 //Code Here
-
+var innerFn= outerFn()
 
 
 /* 
   Now invoke innerFn.
 */
-
+innerFn()
 // Code Here
